@@ -73,7 +73,7 @@ if st.button("Run Agent"):
 
     try:
         res = requests.post(
-            "http://127.0.0.1:8000/ask",
+            "https://logistics-agent-cerf.onrender.com/ask",
             json={
                 "query": query,
                 "locations": st.session_state.locations
